@@ -48,7 +48,7 @@
                 *ngFor="let label of labels; index as index"
                 size="s"
                 [borders]="null"
-                [open]="!!openPagesArr[index]"
+                [(open)]="!!openPagesArr[index]"
             >
                 <span class="tui-space_left-2">
                     <strong>{{label}}</strong>
